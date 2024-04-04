@@ -76,7 +76,6 @@ function Login() {
   const { register, handleSubmit } = useForm();
 
   const login = async (data) => {
-    console.log("my checking", data);
     setError("");
     try {
       const session = await authService.login(data);
